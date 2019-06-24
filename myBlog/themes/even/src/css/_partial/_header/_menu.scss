@@ -1,0 +1,44 @@
+// ==============================
+// Menu
+// =============================
+
+.site-navbar {
+  float: right;
+
+  .menu {
+    display: inline-block;
+    position: relative;
+    padding-left: 0;
+    padding-right: 25px;
+    font-family: $global-serif-font-family;
+
+    .menu-item {
+      display: inline-block;
+      padding: 0 10px;
+
+      &+.menu-item {
+        margin-left: $menu-item-margin-left;
+        ;
+      }
+
+      @include underline-from-center;
+    }
+
+    .menu-item-link {
+      font-size: $menu-link-font-size;
+      width: 62.1px;
+      display: block;
+      text-align: right;
+
+      .iconfont {
+        margin-right: 8px;
+      }
+    }
+  }
+}
+
+@include max-screen() {
+  .site-navbar {
+    display: none;
+  }
+}

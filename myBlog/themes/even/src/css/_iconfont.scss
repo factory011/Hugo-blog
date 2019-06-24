@@ -1,0 +1,109 @@
+// ==============================
+// Iconfont
+// ==============================
+
+@font-face {
+  font-family: 'iconfont';
+
+  src: url('../fonts/iconfont/iconfont.eot');
+  src: url('../fonts/iconfont/iconfont.eot#iefix') format('embedded-opentype'), // not '?#iefix', because webpack will add '?hash=[hash]'
+    url('../fonts/iconfont/iconfont.woff') format('woff'),
+    url('../fonts/iconfont/iconfont.ttf') format('truetype'),
+    url('../fonts/iconfont/iconfont.svg#iconfont') format('svg');
+}
+
+%base-iconfont {
+  font-family: "iconfont" !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  -webkit-text-stroke-width: 0.2px;
+  cursor: pointer;
+
+  /* Enable Ligatures ================ */
+  letter-spacing: 0;
+  font-feature-settings: "liga";
+  font-variant-ligatures: discretionary-ligatures;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.iconfont {
+  @extend %base-iconfont;
+}
+
+// 更换字体图标只需要替换"../font/iconfont"中的4个文件，及以下配置就行，然后执行yarn build
+/* Social Icon */
+.icon-rss:before {
+  content: "\ebdc";
+}
+
+.icon-weibo:before {
+  content: "\e62f";
+}
+
+.icon-heart:before {
+  content: "\e6e0";
+}
+
+.icon-search:before {
+  content: "\e63d";
+}
+
+.icon-up:before {
+  content: "\e66a";
+}
+
+.icon-archives:before {
+  content: "\e690";
+}
+
+.icon-tags:before {
+  content: "\e602";
+}
+
+.icon-home:before {
+  content: "\e64e";
+}
+
+.icon-categories:before {
+  content: "\e60d";
+}
+
+.icon-zhihu:before {
+  content: "\e69a";
+}
+
+.icon-:before {
+  content: "\e629";
+}
+
+.icon-right:before {
+  content: "\e630";
+}
+
+.icon-left:before {
+  content: "\e631";
+}
+
+.icon-email:before {
+  content: "\e626";
+}
+
+.icon-github:before {
+  content: "\ea0a";
+}
+
+.icon-csdn:before {
+  content: "\e600";
+}
+
+.icon-mulu:before {
+  content: "\e601";
+}

@@ -1,0 +1,20 @@
+迁移主题
+
+1、安装主题
+
+2、将myBlog目录下config.toml替换成对应主题exampleSite目录里的config.toml
+
+2、替换主题的字体图标（可选）
+
+3、修改主题配置后需要将主题重新编译打包
+
+4、myBlog\archetypes目录里的default.md为文件生成模板
+
+5、myBlog\content目录里post为放文章的，about.md为'关于'标签的，新建文件 hugo new post/new-content.md
+
+6、myBlog\public目录为打包部署文件
+
+7、myBlog\static目录会直接放到和index.html同级目录中，里面的js、css是否生效需要在config.toml中配置customCSS = ['custom.css']
+
+8、myBlog\themes目录放下载的主题
+
